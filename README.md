@@ -7,10 +7,10 @@ Getting and Cleaning Data course assignment
 The data X_train, X_test,  Y_Train, Y_test, subject_train and subject_test are merged into one data frame.
 X-train and X_test are subsetted to consider on the mean and stndard deviation columns.
 This is achived by using "grep()" to look for all columns with name having "mean" and "std".
-Case of the pattern is ignored. The colnames for the dataframe is fetched from features.txt file.
+The colnames for the dataframe is fetched from "features.txt" file.
 
-This subset has 86 columns out of original 561 columns or features.
-2 more columns SubjectID and Activity are added.
+This subset has 79 columns out of original 561 columns or features.
+2 more columns SubjectID and Activity are added. Total 81 variables in Tidy data.
 
 Finally the Master data frame rows are collapsed to create  tidy data set with the average of each variable for each activity and each subject. 
 

@@ -16,9 +16,13 @@ Finally the Master data frame rows are collapsed to create  tidy data set with t
 
 The above mentioned tidy data set is accomplished in following manner:
 1. The spliting(split()) the Master data frame by activity (are R factors which are named as in activity_labels file)
+
 2.          For each split, again a split() is done by SubjectID
+
 3.              mean for all features is computed using "colMeans()" for each subjectID
+
 4.              tidy data[i] = mean above 
+
 5.          end of tidy data loop
 
 Save the tidy date using write.table() api into a txt file.
